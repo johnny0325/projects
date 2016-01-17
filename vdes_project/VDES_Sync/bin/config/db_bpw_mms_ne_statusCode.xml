@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+		<db>
+			<src>proxool.partner</src>
+			<des>proxool.vdes</des>
+		</db>
+		<table>
+			<name>aaa_bpw_mms_ne_statusCode</name>
+			<field type="varchar(20)">neCode</field>
+			<field type="datetime">statDate</field>	
+			<field type="varchar(10)">status</field>	
+			<field type="numeric(18,0)">count</field>	
+			<sql>select neCode,status,convert(varchar(10),statDate,120) as statdate,sum(count) as count from mms_ne_yyyyMMdd group by neCode,status,convert(varchar(10),statDate,120)</sql>
+		</table>
+		<time>
+			<start>3:30</start>
+			<redo>60*60*1000</redo>
+			<name>bpw_mms_ne_statusCode</name>
+			<exist>31</exist>
+			<delete>3</delete>
+		</time>
+</root>

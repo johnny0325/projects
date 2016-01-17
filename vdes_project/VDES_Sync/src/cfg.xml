@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfgs>
+
+     <ftpmailconf>D:/ftp/VDES/mbw/mail/mqos</ftpmailconf>
+    <uploadfile>D:/vdes/web/web/uploadFile</uploadfile> 
+    <downloadfile>D:/vdes/web/web/downloadFile</downloadfile> 
+     
+    <warmFile>http://icare.gd.chinamobile.com:8080/ilook.txt</warmFile> 
+    <syncUrlRoot>http://icare.gd.chinamobile.com:8080/</syncUrlRoot> 
+    <gatherconf>D:/vdes/web/web/gatherConf</gatherconf>
+    <rangeconf>D:/vdes/web/web/rangeConf</rangeconf> 
+    
+    <ftpconf>D:/ftp/vdes</ftpconf>
+     
+    <mmsspUrl>http://211.139.136.118:8080/HTML/mmskpi</mmsspUrl>
+    
+    <dnsFile>http://211.139.136.118:8080/HTML/icaredb/curdnsr.db</dnsFile>  
+       
+    <wapSpreadFile>http://218.204.251.32:8080/wap_history/ilocate</wapSpreadFile>
+    <wapSpreadGGSNFile>http://218.204.251.32:8080/ggsn_history</wapSpreadGGSNFile>
+    
+    <mmshlrUrl>http://211.139.136.118:8080/HTML/queryipnet.php?q=post</mmshlrUrl>
+    
+    <syslookfile>D:/vdes/web/web/sysLook</syslookfile>
+    <mmsCityRadio>http://211.139.136.118:8080/HTML/mmskpi/</mmsCityRadio> 
+    
+    <mtwBusinessURL>http://211.139.136.120/newdata.txt</mtwBusinessURL>
+    
+    <sysOsCpuRadio>0.9</sysOsCpuRadio>
+    <sysOsMemRadio>0.9</sysOsMemRadio>
+    <sysOsDiskRadio>0.9</sysOsDiskRadio>
+    
+    
+        <!-- email setting -->
+    <Authentication_Name>vdes</Authentication_Name>
+    <Authentication_Password>GMCC123</Authentication_Password>
+    <host>smtp.sohu.com</host>
+    <from>vdes@sohu.com</from>
+    <fromName>增值业务系统管理员</fromName>
+    <charset>GBK</charset>
+    <smtpPort>25</smtpPort>
+    <!--<mail>aiyan2001@sohu.com|九方</mail> -->
+    <mail>leizhiyong@gd.chinamobile.com|雷工,liyuying85@163.com|优讯,aiyan2001@sohu.com|九方</mail>
+</cfgs>
+
+
+    
+

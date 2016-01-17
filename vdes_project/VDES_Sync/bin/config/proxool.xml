@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<something-else-entirely>
+	<proxool>
+		<alias>vdes</alias>
+		<driver-url>
+
+			jdbc:sqlserver://211.139.136.107;DatabaseName=VDES;SelectMethod=direct
+
+		</driver-url>
+		<driver-class>
+			com.microsoft.sqlserver.jdbc.SQLServerDriver
+		</driver-class>
+		<driver-properties>
+			<property name="user" value="VDES" />
+			<property name="password" value="VDES" />
+		</driver-properties>
+		<maximum-connection-count>100</maximum-connection-count>
+		<minimum-connection-count>50</minimum-connection-count>
+		<house-keeping-test-sql>select getdate()</house-keeping-test-sql>
+		
+	</proxool>
+	
+	<proxool>
+		<alias>partner</alias>
+		<driver-url>
+
+			jdbc:sqlserver://211.139.136.108;DatabaseName=MMSReport;SelectMethod=direct
+
+		</driver-url>
+		<driver-class>
+			com.microsoft.sqlserver.jdbc.SQLServerDriver
+		</driver-class>
+		<driver-properties>
+			<property name="user" value="hjtword" />
+			<property name="password" value="gmcc123" />
+		</driver-properties>
+		<maximum-connection-count>50</maximum-connection-count>
+		<house-keeping-test-sql>select getdate()</house-keeping-test-sql>
+	</proxool>
+
+	<proxool> 
+		<alias>mmsc</alias>
+
+		<driver-url>jdbc:mysql://218.204.251.32:3306/mmsc?useUnicode=true&amp;characterEncoding=gbk&amp;zeroDateTimeBehavior=convertToNull&amp;transformedBitIsBoolean=true</driver-url>
+
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="jfang" />
+			<property name="password" value="2009jf" />
+		</driver-properties>
+		<maximum-connection-count>50</maximum-connection-count>
+		<house-keeping-test-sql>select 1</house-keeping-test-sql>
+	</proxool>
+	
+		<proxool> 
+		<alias>mysql_vdes</alias>
+
+		<driver-url>jdbc:mysql://127.0.0.1:3306/vdes?useUnicode=true&amp;characterEncoding=gbk&amp;zeroDateTimeBehavior=convertToNull&amp;transformedBitIsBoolean=true</driver-url>
+
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="123456" />
+		</driver-properties>
+		<maximum-connection-count>30</maximum-connection-count>
+		<house-keeping-test-sql>select 1</house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>mmds</alias>
+		<driver-url>
+		  jdbc:oracle:thin:@120.198.255.34:1521:mmdsdb
+		</driver-url>
+		<driver-class>
+			<!--com.microsoft.sqlserver.jdbc.SQLServerDriver  -->
+			oracle.jdbc.driver.OracleDriver
+		</driver-class>
+		<driver-properties>
+			<property name="user" value="mmds" />
+			<property name="password" value="mmds" />
+		</driver-properties>
+		<maximum-connection-count>100</maximum-connection-count>
+		<minimum-connection-count>50</minimum-connection-count>
+		<house-keeping-test-sql>select sysdate()</house-keeping-test-sql>
+	</proxool>
+</something-else-entirely>

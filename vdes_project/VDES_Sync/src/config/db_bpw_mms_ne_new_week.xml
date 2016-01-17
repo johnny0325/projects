@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+		<db>
+			<src>proxool.partner</src>
+			<des>proxool.vdes</des>
+		</db>
+		<table>
+			<name>aaa_bpw_mms_ne_new</name>
+			<field type="varchar(125)">neCode</field>
+			<field type="datetime">statDate</field>
+			<field type="numeric(18,0)">count</field>
+			<field type="numeric(18,0)">succCount</field>	
+			<field type="numeric(18,0)">totalCount</field>		
+			<sql>
+select a.neCode,a.statDate,a.count,(totalCount-failCount) as succCount,totalCount from 
+(select necode,statdate,sum(count) as count  from mms_ne_yyyyMMdd  where  indicator in('AO','EO','MO') group by neCode, statDate)a  left join 
+(select necode,statdate,sum(count) as failCount  from mms_ne_yyyyMMdd   where  status >= '2000' and  substring(indicator,2,1) = 'T' group by neCode,statDate)b on a.necode = b.necode and a.statDate = b.statDate left join 
+(select necode,statdate,sum(count) as totalCount  from mms_ne_yyyyMMdd   where  substring(indicator,2,1) = 'O' group by neCode,statDate) c on a.necode = c.necode and a.statDate = c.statDate 			
+			</sql>	
+			<suffix>week</suffix>	
+		</table>
+		<time>
+			<start>3:30</start>
+			<redo>60*60*1000</redo>
+			<name>bpw_mms_ne</name>
+			<exist>7</exist>
+			<delete>3</delete>
+		</time>
+</root>

@@ -1,0 +1,5 @@
+内存分四块：
+1、code segement，装代码
+2、data segement，装静态变量，字符串常量
+3、stack，装局部变量
+4、heap，装new出来的对象

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+		<db>
+			<src>proxool.vdes</src>
+			<des>proxool.vdes</des>
+		</db>
+		<table>
+			<name>aaa_bpw_mms_ne_new</name>
+			<field type="varchar(125)">neCode</field>
+			<field type="datetime">statDate</field>
+			<field type="numeric(18,0)">count</field>
+			<field type="numeric(18,0)">succCount</field>	
+			<field type="numeric(18,0)">totalCount</field>		
+			<sql>
+select neCode,convert(varchar(10),statDate,120) as statDate,sum(count) as count,
+sum(succCount) as succCount,sum(totalCount) as totalCount
+from aaa_bpw_mms_ne_new_week group by neCode,convert(varchar(10),statDate,120)				
+			</sql>	
+			<suffix>month</suffix>	
+		</table>
+		<time>
+			<start>3:30</start>
+			<redo>60*60*1000</redo>
+			<name>bpw_mms_ne</name>
+			<exist>31</exist>
+			<delete>3</delete>
+		</time>
+</root>

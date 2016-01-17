@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+		<db>
+			<src>proxool.partner</src>
+			<des>proxool.vdes</des>
+		</db>
+		<table>
+			<name>aaa_bpw_mms_city_new</name>
+			<field type="varchar(125)">cityCode</field>
+			<field type="datetime">statDate</field>
+			<field type="numeric(18,0)">count</field>
+			<field type="numeric(18,0)">succCount</field>	
+			<field type="numeric(18,0)">totalCount</field>		
+			<sql>
+select b.cityCode,a.statDate,a.count,succCount,totalCount from 
+(select citycode,statdate,sum(count) as count,null as succCount,null as totalCount  from mms_city_yyyyMMdd  where  indicator in('AO','EO','MO') group by cityCode, statDate) a left join base_city b on a.citycode=b.cityname</sql>	
+			<suffix>week</suffix>	
+		</table>
+		<time>
+			<start>3:30</start>
+			<redo>60*60*1000</redo>
+			<name>bpw_mms_city</name>
+			<exist>7</exist>
+			<delete>3</delete>
+		</time>
+</root>

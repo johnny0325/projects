@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+		<db>
+			<src>proxool.partner</src>
+			<des>proxool.vdes</des>
+		</db>
+		<table>
+			<name>aaa_bpw_mms_sp_new</name>
+			<field type="varchar(20)">neCode</field>
+			<field type="varchar(50)">spName</field>
+			<field type="varchar(20)">spCode</field>
+			<field type="datetime">statDate</field>	
+			<field type="numeric(18,0)">AOcount</field>	
+			<field type="numeric(20,6)">AOSubmitCount</field>	
+			<field type="numeric(20,6)">AOReceiveCount</field>	
+			<field type="numeric(18,0)">ATCount</field>	
+			<field type="numeric(20,6)">ATSubmitCount</field>		
+			<sql>select neCode,spName,spCode,yyyy-MM-dd as statDate,AOcount,AOSubmitRate*AOcount/100 as AOSubmitCount ,AOReceiveRate*AOcount/100 as AOReceiveCount,ATCount,ATSubmitRate*ATCount/100 as ATSubmitCount  from mms_sp_yyyyMMdd</sql>
+		</table>
+		<time>
+			<start>3:30</start>
+			<redo>60*60*1000</redo>
+			<name>bpw_mms_sp_new</name>
+			<exist>31</exist>
+			<delete>3</delete>
+		</time>
+</root>
