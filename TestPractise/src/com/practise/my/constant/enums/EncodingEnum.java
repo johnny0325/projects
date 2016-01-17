@@ -12,6 +12,6 @@ public enum EncodingEnum {
 	}
 	
 	public String getEncoding(){
-		return this.encoding;
+		return this.encoding;  
 	}
 }
