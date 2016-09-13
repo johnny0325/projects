@@ -6,12 +6,12 @@ import java.io.OutputStreamWriter;
 public class TestTransForm1 {
 
 	/**
-	 * ²âÊÔ×ª»»Á÷:InputStreamReader¡¢OutputStreamWriter£¬°Ñ×Ö½ÚÁ÷×ª»»³É×Ö·ûÁ÷£¬·½±ã²Ù×÷
+	 * æµ‹è¯•è½¬æ¢æµ:InputStreamReaderã€OutputStreamWriterï¼ŒæŠŠå­—èŠ‚æµè½¬æ¢æˆå­—ç¬¦æµï¼Œæ–¹ä¾¿æ“ä½œ
 	 * TestTransForm1.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-24 ÏÂÎç03:41:35
+	 * Authorï¼šjllin
+	 * 2013-7-24 ä¸‹åˆ03:41:35
 	 */
 	public static void main(String[] args) {
 		try {
@@ -19,8 +19,8 @@ public class TestTransForm1 {
 			osw.write("microsoftibmsunapplehp");
 			System.out.println(osw.getEncoding());
 			osw.close();
-			//true±íÊ¾×·¼ÓÄÚÈİµ½ÎÄ¼şÀïÃæ
-			//Ö¸¶¨Êä³ö±àÂëÊ¹ÓÃISO8859_1,Ëü»¹ÓĞÒ»¸öÃû×Ö½Ğlatin-1
+			//trueè¡¨ç¤ºè¿½åŠ å†…å®¹åˆ°æ–‡ä»¶é‡Œé¢
+			//æŒ‡å®šè¾“å‡ºç¼–ç ä½¿ç”¨ISO8859_1,å®ƒè¿˜æœ‰ä¸€ä¸ªåå­—å«latin-1
 			osw = new OutputStreamWriter(new FileOutputStream("d:\\char.txt",true),"ISO8859_1");
 			osw.write("microsoftibmsunapplehp");
 			System.out.println(osw.getEncoding());

@@ -6,21 +6,21 @@ import java.io.InputStreamReader;
 public class TestTransForm2 {
 
 	/**
-	 * ²âÊÔ×ª»»Á÷:InputStreamReader¡¢OutputStreamWriter£¬°Ñ×Ö½ÚÁ÷×ª»»³É×Ö·ûÁ÷£¬·½±ã²Ù×÷
+	 * æµ‹è¯•è½¬æ¢æµ:InputStreamReaderã€OutputStreamWriterï¼ŒæŠŠå­—èŠ‚æµè½¬æ¢æˆå­—ç¬¦æµï¼Œæ–¹ä¾¿æ“ä½œ
 	 * TestTransForm2.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-24 ÏÂÎç04:15:28
+	 * Authorï¼šjllin
+	 * 2013-7-24 ä¸‹åˆ04:15:28
 	 */
 	public static void main(String[] args) {
 		try {
 			InputStreamReader isw = new InputStreamReader(System.in);
-			//BufferedReader¹¹Ôì·½·¨ÖĞµÄ²ÎÊıÊÇReader,ËüÊÇÒ»¸ö³éÏóÀà£¬³éÏóÀà²»ÄÜ±»ÊµÀı»¯£¬
-			//ÕâÀïÊ¹ÓÃInputStreamReader×÷Îª²ÎÊı£¬ËµÃ÷ÊÇ¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
-			//InputStreamReaderÊÇReaderµÄÒ»¸ö×ÓÀà
+			//BufferedReaderæ„é€ æ–¹æ³•ä¸­çš„å‚æ•°æ˜¯Reader,å®ƒæ˜¯ä¸€ä¸ªæŠ½è±¡ç±»ï¼ŒæŠ½è±¡ç±»ä¸èƒ½è¢«å®ä¾‹åŒ–ï¼Œ
+			//è¿™é‡Œä½¿ç”¨InputStreamReaderä½œä¸ºå‚æ•°ï¼Œè¯´æ˜æ˜¯çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
+			//InputStreamReaderæ˜¯Readerçš„ä¸€ä¸ªå­ç±»
 			BufferedReader br = new BufferedReader(isw);
-			//readLine()ÊÇÒ»¸ö×èÈûÊ½·½·¨£¬Ò²½ĞÍ¬²½·½·¨£¬ÒâË¼¾ÍÊÇÄã²»ÊäÈë£¬ÎÒ¾Í²»ÄÜ¸É±ğ µÄÊÂ,Ö»ÓĞÄãÊäÈëÁË£¬ÎÒ²Å¿ÉÒÔ¼ÌĞøÖ´ĞĞÏÂÃæµÄ´úÂë
+			//readLine()æ˜¯ä¸€ä¸ªé˜»å¡å¼æ–¹æ³•ï¼Œä¹Ÿå«åŒæ­¥æ–¹æ³•ï¼Œæ„æ€å°±æ˜¯ä½ ä¸è¾“å…¥ï¼Œæˆ‘å°±ä¸èƒ½å¹²åˆ« çš„äº‹,åªæœ‰ä½ è¾“å…¥äº†ï¼Œæˆ‘æ‰å¯ä»¥ç»§ç»­æ‰§è¡Œä¸‹é¢çš„ä»£ç 
 			String s= br.readLine();
 			while(s != null) {
 				if (s.equalsIgnoreCase("exit")) {

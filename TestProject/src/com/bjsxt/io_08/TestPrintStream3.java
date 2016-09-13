@@ -9,18 +9,18 @@ import java.util.Date;
 public class TestPrintStream3 {
 
 	/**
-	 * 测试使用PrintWriter
+	 * 娴嬭瘯浣跨敤PrintWriter
 	 * TestPrintStream3.main()
 	 * @param args
 	 * @return void
-	 * Author：jllin
-	 * 2013-7-28 下午10:56:38
+	 * Author锛歫llin
+	 * 2013-7-28 涓嬪崍10:56:38
 	 */
 	public static void main(String[] args) {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String s = null;
 		try {
-			FileWriter fw = new FileWriter("E:\\项目源程序\\TestProject\\src\\com\\bjsxt\\io_08\\logfile.log",true);
+			FileWriter fw = new FileWriter("E:\\椤圭洰婧愮▼搴廫\TestProject\\src\\com\\bjsxt\\io_08\\logfile.log",true);
 			PrintWriter log = new PrintWriter(fw);
 			while((s = br.readLine()) != null){
 				if(s.equalsIgnoreCase("exit")){
