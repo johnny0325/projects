@@ -3,13 +3,13 @@ package com.bjsxt.basegrammar_02;
 public class TestBreak1 {
 
 	/**
-	 * 循环语句举例
-	 * 输了1~100内前5个可以被3整除的数
+	 * 寰幆璇彞涓句緥
+	 * 杈撲簡1~100鍐呭墠5涓彲浠ヨ3鏁撮櫎鐨勬暟
 	 * TestBreak1.main()
 	 * @param args
 	 * @return void
-	 * Author：jllin
-	 * 2013-8-4 下午02:12:10
+	 * Author锛歫llin
+	 * 2013-8-4 涓嬪崍02:12:10
 	 */
 	public static void main(String[] args) {
 		int num = 0,i = 1;
@@ -19,7 +19,7 @@ public class TestBreak1 {
 				num++;
 			}
 			if(num == 5) {
-				break;//跳出循环
+				break;//璺冲嚭寰幆
 			}
 			i++;
 		}

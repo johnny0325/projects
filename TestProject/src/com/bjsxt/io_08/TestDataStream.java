@@ -8,16 +8,16 @@ import java.io.DataOutputStream;
 public class TestDataStream {
 
 	/**
-	 * ²âÊÔÊ¹ÓÃÊı¾İÁ÷DataInputStream¡¢DataOutputStream£¬
-	 * ÒÔ¼°ByteArrayInputStream¡¢ByteArrayOutputStream(ÓÃÓÚÔÚÄÚ´æÀïµÄ×Ö½ÚÊı×é½øĞĞ¶ÁĞ´)
+	 * æµ‹è¯•ä½¿ç”¨æ•°æ®æµDataInputStreamã€DataOutputStreamï¼Œ
+	 * ä»¥åŠByteArrayInputStreamã€ByteArrayOutputStream(ç”¨äºåœ¨å†…å­˜é‡Œçš„å­—èŠ‚æ•°ç»„è¿›è¡Œè¯»å†™)
 	 * TestDataStream.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-28 ÏÂÎç05:56:49
+	 * Authorï¼šjllin
+	 * 2013-7-28 ä¸‹åˆ05:56:49
 	 */
 	public static void main(String[] args) {
-		//Ê×ÏÈÊÇÔÚÄÚ´æÀï·ÖÅäÒ»¸ö×Ö½ÚÊı×é£¬È»ºó´´½¨ÏòÍâÊä³öµÄ¹ÜµÀByteArrayOutputStream
+		//é¦–å…ˆæ˜¯åœ¨å†…å­˜é‡Œåˆ†é…ä¸€ä¸ªå­—èŠ‚æ•°ç»„ï¼Œç„¶ååˆ›å»ºå‘å¤–è¾“å‡ºçš„ç®¡é“ByteArrayOutputStream
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		DataOutputStream dos = new DataOutputStream(baos);
 		try {
@@ -25,12 +25,12 @@ public class TestDataStream {
 			dos.writeBoolean(true);
 			
 			ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-			//·µ»Ø¿É´Ó´ËÊäÈëÁ÷¶ÁÈ¡£¨»òÌø¹ı£©µÄÊ£Óà×Ö½ÚÊı
+			//è¿”å›å¯ä»æ­¤è¾“å…¥æµè¯»å–ï¼ˆæˆ–è·³è¿‡ï¼‰çš„å‰©ä½™å­—èŠ‚æ•°
 			System.out.println(bais.available());
 			DataInputStream dis = new DataInputStream(bais);
-			//Òª×¢ÒâË³Ğò£ºÏÈĞ´µÄÏÈ¶Á³öÀ´£¬ËùÒÔÊÇÏÈDouble,ºóBoolean£¬·ñÔò¶Á³öÀ´µÄÊı¾İ¾ÍÊÇÂÒÌ×µÄ£¬ÕâËµÃ÷´ÓÊı¾İ½á¹¹¿´ËüÊÇÒ»¸ö¶ÓÁĞ
+			//è¦æ³¨æ„é¡ºåºï¼šå…ˆå†™çš„å…ˆè¯»å‡ºæ¥ï¼Œæ‰€ä»¥æ˜¯å…ˆDouble,åBooleanï¼Œå¦åˆ™è¯»å‡ºæ¥çš„æ•°æ®å°±æ˜¯ä¹±å¥—çš„ï¼Œè¿™è¯´æ˜ä»æ•°æ®ç»“æ„çœ‹å®ƒæ˜¯ä¸€ä¸ªé˜Ÿåˆ—
 			System.out.println(dis.readDouble());
-			//¶ÁÈ¡Ò»¸ö×Ö½Ú£¬²¢×ª»»³É²¼¶ûÀàĞÍ£¬Ë­°ïÄã×ªµÄ£¿DataInputStream£¬ÄãÒª×Ô¼º×ª»»ÕâÍæÒâ£¬Âé·³ËÀÁË 
+			//è¯»å–ä¸€ä¸ªå­—èŠ‚ï¼Œå¹¶è½¬æ¢æˆå¸ƒå°”ç±»å‹ï¼Œè°å¸®ä½ è½¬çš„ï¼ŸDataInputStreamï¼Œä½ è¦è‡ªå·±è½¬æ¢è¿™ç©æ„ï¼Œéº»çƒ¦æ­»äº† 
 			System.out.println(dis.readBoolean());
 			dis.close();
 			dos.close();

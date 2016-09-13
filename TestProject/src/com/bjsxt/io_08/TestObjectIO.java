@@ -10,25 +10,25 @@ import com.sun.corba.se.spi.ior.iiop.JavaCodebaseComponent;
 public class TestObjectIO {
 
 	/**
-	 * ÖªÊ¶µã£ºÑ§Ï°Ê¹ÓÃ¶ÔÏóÁ÷¡¢ĞòÁĞ»¯£¬ÒÔ¼°¹Ø¼ü×ÖtransientÊ¹ÓÃ·½·¨
+	 * çŸ¥è¯†ç‚¹ï¼šå­¦ä¹ ä½¿ç”¨å¯¹è±¡æµã€åºåˆ—åŒ–ï¼Œä»¥åŠå…³é”®å­—transientä½¿ç”¨æ–¹æ³•
 	 * TestObjectIO.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-28 ÏÂÎç11:39:48
+	 * Authorï¼šjllin
+	 * 2013-7-28 ä¸‹åˆ11:39:48
 	 */
 	public static void main(String[] args) {
 		T obj = new T();
 		obj.k = 8;
 		try {
-			FileOutputStream fos = new FileOutputStream("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\bjsxt\\io_08\\testobjectio.dat");
+			FileOutputStream fos = new FileOutputStream("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\bjsxt\\io_08\\testobjectio.dat");
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(obj);
 			oos.flush();
 			oos.close();
 			fos.close();
 			
-			FileInputStream fis = new FileInputStream("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\test\\io\\testobjectio.dat");
+			FileInputStream fis = new FileInputStream("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\test\\io\\testobjectio.dat");
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			T readObj = (T)ois.readObject();
 			System.out.println("T's i = "+readObj.i+", j = "+readObj.j+", d = "+readObj.d+", k = "+readObj.k);
@@ -41,13 +41,13 @@ public class TestObjectIO {
 
 }
 
-//Èç¹ûÄãÈ·È·ÊµÊµÏë°ÑÕâÑùµÄÒ»¸öÀà¶ÔÏó£¬Ğ´µ½Ó²ÅÌÉÏ»òÕßĞ´µ½ÍøÂçÉÏ£¬¾ÍÊÇÄãÏë°ÑËüĞòÁĞ»¯³ÉÒ»¸ö×Ö½ÚÁ÷£¬±ØĞëµÃÊµÏÖÕâ¸ö½Ó¿Ú
-//SerializableÊÇÒ»¸ö±êÖ¾ĞÔµÄ½Ó¿Ú£¬Ëü×ÔÉíÃ»ÓĞ·½·¨£¬Ö»ÊÇ´òÁËÒ»¸ö±êÖ¾£¬±àÒëÆ÷Óöµ½Õâ¸ö±êÖ¾ºó£¬¾ÍÖªµÀËüÊÇÊµÏÖĞòÁĞ»¯µÄ
+//å¦‚æœä½ ç¡®ç¡®å®å®æƒ³æŠŠè¿™æ ·çš„ä¸€ä¸ªç±»å¯¹è±¡ï¼Œå†™åˆ°ç¡¬ç›˜ä¸Šæˆ–è€…å†™åˆ°ç½‘ç»œä¸Šï¼Œå°±æ˜¯ä½ æƒ³æŠŠå®ƒåºåˆ—åŒ–æˆä¸€ä¸ªå­—èŠ‚æµï¼Œå¿…é¡»å¾—å®ç°è¿™ä¸ªæ¥å£
+//Serializableæ˜¯ä¸€ä¸ªæ ‡å¿—æ€§çš„æ¥å£ï¼Œå®ƒè‡ªèº«æ²¡æœ‰æ–¹æ³•ï¼Œåªæ˜¯æ‰“äº†ä¸€ä¸ªæ ‡å¿—ï¼Œç¼–è¯‘å™¨é‡åˆ°è¿™ä¸ªæ ‡å¿—åï¼Œå°±çŸ¥é“å®ƒæ˜¯å®ç°åºåˆ—åŒ–çš„
 class T implements java.io.Serializable {
 	int i = 10;
 	int j = 9;
 	double d = 2.3;
-	//transient,Í¸Ã÷µÄÒâË¼£¬±»transientĞŞÊÎµÄ³ÉÔ±±äÁ¿£¬ÔÚĞòÁĞ»¯µÄÊ±ºò£¬²»Óè¿¼ÂÇ
-	//Ò²¾ÍÊÇËµ£¬ÍùÓ²ÅÌÉÏĞ´µÄÊ±ºò£¬Ö»Ğ´ÉÏÃæµÄÈı¸ö±äÁ¿£¬k±äÁ¿²»Ğ´£¬ÄÇÃ´¶Á¶ÔÏó³öÀ´µÄÊ±ºò¾ÍÊÇÄ¬ÈÏµÄÖµ0
+	//transient,é€æ˜çš„æ„æ€ï¼Œè¢«transientä¿®é¥°çš„æˆå‘˜å˜é‡ï¼Œåœ¨åºåˆ—åŒ–çš„æ—¶å€™ï¼Œä¸äºˆè€ƒè™‘
+	//ä¹Ÿå°±æ˜¯è¯´ï¼Œå¾€ç¡¬ç›˜ä¸Šå†™çš„æ—¶å€™ï¼Œåªå†™ä¸Šé¢çš„ä¸‰ä¸ªå˜é‡ï¼Œkå˜é‡ä¸å†™ï¼Œé‚£ä¹ˆè¯»å¯¹è±¡å‡ºæ¥çš„æ—¶å€™å°±æ˜¯é»˜è®¤çš„å€¼0
 	transient int k = 15;
 }

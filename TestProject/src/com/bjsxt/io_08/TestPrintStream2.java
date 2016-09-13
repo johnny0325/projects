@@ -8,12 +8,12 @@ import java.io.PrintStream;
 public class TestPrintStream2 {
 
 	/**
-	 * 测试PrintStream类的使用
+	 * 娴嬭瘯PrintStream绫荤殑浣跨敤
 	 * TestPrintStream2.main()
 	 * @param args
 	 * @return void
-	 * Author：jllin
-	 * 2013-7-28 下午09:44:41
+	 * Author锛歫llin
+	 * 2013-7-28 涓嬪崍09:44:41
 	 */
 	public static void main(String[] args) {
 		
@@ -37,7 +37,7 @@ public class TestPrintStream2 {
 			}
 			br.close();
 		} catch (Exception e) {
-			System.out.println("无法读取文件");
+			System.out.println("鏃犳硶璇诲彇鏂囦欢");
 		}
 	}
 

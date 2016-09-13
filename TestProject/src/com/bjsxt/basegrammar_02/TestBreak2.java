@@ -3,30 +3,30 @@ package com.bjsxt.basegrammar_02;
 public class TestBreak2 {
 
 	/**
-	 * Ñ­»·Óï¾ä¾ÙÀý
-	 * Êä³ö101~200ÄÚµÄÖÊÊý
-	 * ÖÊÊý£ºÊÇÖ»ÄÜ±»1ºÍËü±¾ÉíÕû³ýµÄÊý¡£
-	 * Ò²¾ÍÊÇËµ£¬¶ÔÓÚÄ³¸öÕûÊý£¬Ö»Òª´Ó2µ½ËüÖ®¼äÓÐÒ»¸öÊý¿ÉÒÔÕû³ýËü£¬ÄÇÃ´Ëü¾Í²»ÊÇÖÊÊý¡£
-	 * ÒÔÉÏÊÇÕâ¸ö³ÌÐòËù²ÉÓÃËã·¨µÄ»ù±¾Ô­Àí
+	 * å¾ªçŽ¯è¯­å¥ä¸¾ä¾‹
+	 * è¾“å‡º101~200å†…çš„è´¨æ•°
+	 * è´¨æ•°ï¼šæ˜¯åªèƒ½è¢«1å’Œå®ƒæœ¬èº«æ•´é™¤çš„æ•°ã€‚
+	 * ä¹Ÿå°±æ˜¯è¯´ï¼Œå¯¹äºŽæŸä¸ªæ•´æ•°ï¼Œåªè¦ä»Ž2åˆ°å®ƒä¹‹é—´æœ‰ä¸€ä¸ªæ•°å¯ä»¥æ•´é™¤å®ƒï¼Œé‚£ä¹ˆå®ƒå°±ä¸æ˜¯è´¨æ•°ã€‚
+	 * ä»¥ä¸Šæ˜¯è¿™ä¸ªç¨‹åºæ‰€é‡‡ç”¨ç®—æ³•çš„åŸºæœ¬åŽŸç†
 	 * TestBreak2.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-8-4 ÏÂÎç02:20:36
+	 * Authorï¼šjllin
+	 * 2013-8-4 ä¸‹åˆ02:20:36
 	 */
 	public static void main(String[] args) {
-		for(int i=101; i<200; i+=2) {//ÕâÀïÎªÊ²Ã´ÊÇi+=2?ÒòÎªÅ¼Êý¿Ï¶¨²»ÊÇÖÊÊý
+		for(int i=101; i<200; i+=2) {//è¿™é‡Œä¸ºä»€ä¹ˆæ˜¯i+=2?å› ä¸ºå¶æ•°è‚¯å®šä¸æ˜¯è´¨æ•°
 			boolean f = true;
 			for(int j=2; j<i; j++) {
 				if(i % j == 0){
 					f = false;
-					break;//Ìø³öÄÚ²ãµÄforÑ­»·
+					break;//è·³å‡ºå†…å±‚çš„forå¾ªçŽ¯
 				}
 			}
 			if(!f) {
 				continue;
 			}
-			System.out.println(" "+i);//Èç¹ûÊÇÖÊÊý£¬°ÑiµÄÖµ´òÓ¡³öÀ´
+			System.out.println(" "+i);//å¦‚æžœæ˜¯è´¨æ•°ï¼ŒæŠŠiçš„å€¼æ‰“å°å‡ºæ¥
 		}
 	}
 

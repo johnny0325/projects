@@ -11,8 +11,8 @@ public class TestFileOutputStream {
 	 * TestFileOutputStream.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-22 ÏÂÎç04:50:40
+	 * Authorï¼šjllin
+	 * 2013-7-22 ä¸‹åˆ04:50:40
 	 */
 	public static void main(String[] args) {
 		int b = 0;
@@ -20,21 +20,21 @@ public class TestFileOutputStream {
 		FileOutputStream fos = null;
 		
 		try {
-			fis = new FileInputStream("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\bjsxt\\io_08\\TestFileInputStream.java");
-			fos = new FileOutputStream("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\bjsxt\\io_08\\CopyTestFileInputStream.java");
+			fis = new FileInputStream("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\bjsxt\\io_08\\TestFileInputStream.java");
+			fos = new FileOutputStream("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\bjsxt\\io_08\\CopyTestFileInputStream.java");
 			while ((b = fis.read()) != -1) {
 				fos.write(b);
 			}
 			fis.close();
 			fos.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("ÕÒ²»µ½Ö¸¶¨ÎÄ¼ş");
+			System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šæ–‡ä»¶");
 			System.exit(-1);
 		} catch (IOException e) {
-			System.out.println("ÎÄ¼ş¸´ÖÆ³ö´í");
+			System.out.println("æ–‡ä»¶å¤åˆ¶å‡ºé”™");
 			System.exit(-1);
 		}
-		System.out.println("ÎÄ¼şÒÑ¸´ÖÆ");
+		System.out.println("æ–‡ä»¶å·²å¤åˆ¶");
 	}
 
 }

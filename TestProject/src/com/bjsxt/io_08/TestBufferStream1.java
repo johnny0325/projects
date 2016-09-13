@@ -6,26 +6,26 @@ import java.io.FileInputStream;
 public class TestBufferStream1 {
 
 	/**
-	 * ²âÊÔ»º³åÁ÷BufferedInputStream¡¢BufferedOutputStream
+	 * æµ‹è¯•ç¼“å†²æµBufferedInputStreamã€BufferedOutputStream
 	 * TestBufferStream1.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-22 ÏÂÎç05:32:06
+	 * Authorï¼šjllin
+	 * 2013-7-22 ä¸‹åˆ05:32:06
 	 */
 	public static void main(String[] args) {
 		try {
-			FileInputStream fis = new FileInputStream("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\bjsxt\\io_08\\TestFileInputStream.java");
+			FileInputStream fis = new FileInputStream("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\bjsxt\\io_08\\TestFileInputStream.java");
 			BufferedInputStream bis = new BufferedInputStream(fis);
 			System.out.println(bis.read());
 			System.out.println(bis.read());
-			bis.mark(100);	//ÔÚ100ĞĞµÄÎ»ÖÃ×öÒ»¸ö±êÖ¾
+			bis.mark(100);	//åœ¨100è¡Œçš„ä½ç½®åšä¸€ä¸ªæ ‡å¿—
 			int c = 0;
 			for (int i=0;i<10 && (c=bis.read()) != -1;i++) {
 				System.out.print((char)c+" ");
 			}
 			System.out.println();
-			bis.reset();	//ÖØĞÂ»Øµ½±êÖ¾µÄµØ·½
+			bis.reset();	//é‡æ–°å›åˆ°æ ‡å¿—çš„åœ°æ–¹
 			for (int i=0;i<10 && (c=bis.read()) != -1;i++) {
 				System.out.print((char)c+" ");
 			}

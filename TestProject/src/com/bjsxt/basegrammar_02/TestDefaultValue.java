@@ -1,10 +1,10 @@
 package com.bjsxt.basegrammar_02;
 
 /**
- * 测试下面这几种基本类型的数据作为成员变量时的默认值是多少
+ * 娴嬭瘯涓嬮潰杩欏嚑绉嶅熀鏈被鍨嬬殑鏁版嵁浣滀负鎴愬憳鍙橀噺鏃剁殑榛樿鍊兼槸澶氬皯
  * TestDefaultValue
- * Author：jllin
- * 2013-8-11  下午09:29:25
+ * Author锛歫llin
+ * 2013-8-11  涓嬪崍09:29:25
  */
 public class TestDefaultValue {
 	private char c = 3;
@@ -15,8 +15,8 @@ public class TestDefaultValue {
 	 * TestDefaultValue.main()
 	 * @param args
 	 * @return void
-	 * Author：jllin
-	 * 2013-8-11 下午09:06:47
+	 * Author锛歫llin
+	 * 2013-8-11 涓嬪崍09:06:47
 	 */
 	public static void main(String[] args) {
 		TestDefaultValue t = new TestDefaultValue();

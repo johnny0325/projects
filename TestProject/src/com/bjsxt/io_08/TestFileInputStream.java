@@ -8,27 +8,27 @@ import java.io.IOException;
 public class TestFileInputStream {
 
 	/**
-	 * ²âÊÔÊ¹ÓÃFileInputStream¶ÁÈ¡ÎÄ¼şTestFileInputStream.javaµÄÄÚÈİ£¬²¢ÏÔÊ¾³öÀ´
-	 * ÒÉÎÊ£ºÖ´ĞĞÕâ¸ö³ÌĞò,´òÓ¡³öÀ´Êı¾İÎªÊ²Ã´ÓĞ"?"
-	 * Ô­Òò£ºÒ»¸öÖĞÎÄÕ¼Á½¸ö×Ö½ÚµÄÊı¾İ£¬¶øFileInputStreamÖĞµÄread()·½·¨ÊÇÃ¿´Î¶ÁÈ¡Ò»¸ö×Ö½Ú£¬È»ºó¾ÍÏÔÊ¾³öÀ´ÁË£¬¿Ï¶¨»á³öÏÖÖĞÎÄÎŞ·¨ÏÔÊ¾µÄÎÊÌâ
-	 * ½â¾ö£ºÊ¹ÓÃFileReader£¬Ã¿´Î¶ÁÈ¡Ò»¸ö×Ö·û£¬ÕâÑùÖĞÎÄ¾ÍÄÜ¹»Õı³£¶ÁÈ¡ÁË
+	 * æµ‹è¯•ä½¿ç”¨FileInputStreamè¯»å–æ–‡ä»¶TestFileInputStream.javaçš„å†…å®¹ï¼Œå¹¶æ˜¾ç¤ºå‡ºæ¥
+	 * ç–‘é—®ï¼šæ‰§è¡Œè¿™ä¸ªç¨‹åº,æ‰“å°å‡ºæ¥æ•°æ®ä¸ºä»€ä¹ˆæœ‰"?"
+	 * åŸå› ï¼šä¸€ä¸ªä¸­æ–‡å ä¸¤ä¸ªå­—èŠ‚çš„æ•°æ®ï¼Œè€ŒFileInputStreamä¸­çš„read()æ–¹æ³•æ˜¯æ¯æ¬¡è¯»å–ä¸€ä¸ªå­—èŠ‚ï¼Œç„¶åå°±æ˜¾ç¤ºå‡ºæ¥äº†ï¼Œè‚¯å®šä¼šå‡ºç°ä¸­æ–‡æ— æ³•æ˜¾ç¤ºçš„é—®é¢˜
+	 * è§£å†³ï¼šä½¿ç”¨FileReaderï¼Œæ¯æ¬¡è¯»å–ä¸€ä¸ªå­—ç¬¦ï¼Œè¿™æ ·ä¸­æ–‡å°±èƒ½å¤Ÿæ­£å¸¸è¯»å–äº†
 	 * TestFileInputStream.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-22 ÏÂÎç03:20:46
+	 * Authorï¼šjllin
+	 * 2013-7-22 ä¸‹åˆ03:20:46
 	 */
 	public static void main(String[] args) {
 		int b = 0;
 		FileInputStream fis = null;
 		try {
-			//ÎÄ¼şµÄÂ·¾¶ÒªÊ¹ÓÃ¾ø¶ÔÂ·¾¶
-			//javaÀïÃæ,Â·¾¶µÄ·Ö¸ô·û¿ÉÒÔÊ¹ÓÃÁ½¸ö·´Ğ±¸Ü"\\" £¬Ò²¿ÉÒÔÊ¹ÓÃÒ»¸öÕıĞ±¸Ü"/"À´±íÊ¾,»òÕßÒ»¸öÕıĞ±¸ÜÓëÁ½¸ö·´Ğ±¸Ü»ì×ÅÓÃÒ²¿ÉÒÔ
-//			fis = new FileInputStream("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\test\\io\\TestFileInputStream.java");
+			//æ–‡ä»¶çš„è·¯å¾„è¦ä½¿ç”¨ç»å¯¹è·¯å¾„
+			//javaé‡Œé¢,è·¯å¾„çš„åˆ†éš”ç¬¦å¯ä»¥ä½¿ç”¨ä¸¤ä¸ªåæ–œæ "\\" ï¼Œä¹Ÿå¯ä»¥ä½¿ç”¨ä¸€ä¸ªæ­£æ–œæ "/"æ¥è¡¨ç¤º,æˆ–è€…ä¸€ä¸ªæ­£æ–œæ ä¸ä¸¤ä¸ªåæ–œæ æ··ç€ç”¨ä¹Ÿå¯ä»¥
+//			fis = new FileInputStream("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\test\\io\\TestFileInputStream.java");
 			fis = new FileInputStream("TestFileInputStream.java");
 			
 		} catch (FileNotFoundException e) {
-			System.out.println("ÏµÍ³ÕÒ²»µ½Ö¸¶¨ÎÄ¼ş");
+			System.out.println("ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šæ–‡ä»¶");
 			System.exit(-1);
 		}
 		
@@ -40,9 +40,9 @@ public class TestFileInputStream {
 			}
 			fis.close();
 			System.out.println();
-			System.out.println("¹²¶ÁÈ¡ÁË "+num+" ¸ö×Ö½Ú");
+			System.out.println("å…±è¯»å–äº† "+num+" ä¸ªå­—èŠ‚");
 		} catch (IOException e) {
-			System.out.println("ÎÄ¼ş¶ÁÈ¡´íÎó");
+			System.out.println("æ–‡ä»¶è¯»å–é”™è¯¯");
 			System.exit(-1);
 		}
 		

@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ÒÉÎÊ£º¸ù¾İÅĞ¶Ï·½·¨ÊÇ·ñÖØÔØµÄÁ½¸öÌõ¼ş£¬ÕâÁ½¸ö·½·¨Ó¦¸Ã²»ÊÇÖØÔØ²Å¶Ô£¬ÎªÊ²Ã´ÕâÀïÃ»ÓĞ±¨´íÎóÄØ£¿
- * ·½·¨ÖØÔØ£º·½·¨ÃûÒ»Ñù£¬²ÎÊıÁĞ±í²»Í¬£¬·µ»ØÀàĞÍ¿ÉÒÔÏàÍ¬£¬Ò²¿ÉÒÔ²»Í¬¡£
- * 2013.4.18ÖØĞÂÀí½â£¬¸ù¾İ·½·¨ÖØÔØµÄ¶¨Òå£¬²»ÄÜÀí½â£¬ÕâÁ½¸ö·½·¨µÄ²ÎÊıÀàĞÍÊÇ²»Ò»ÑùµÄ£¬ËäÈ»¶¼ÊÇList£¬µ«ÊÇËüÃÇµÄÊı¾İÀàĞÍÊÇ²»Ò»ÑùµÄ¡£
+ * ç–‘é—®ï¼šæ ¹æ®åˆ¤æ–­æ–¹æ³•æ˜¯å¦é‡è½½çš„ä¸¤ä¸ªæ¡ä»¶ï¼Œè¿™ä¸¤ä¸ªæ–¹æ³•åº”è¯¥ä¸æ˜¯é‡è½½æ‰å¯¹ï¼Œä¸ºä»€ä¹ˆè¿™é‡Œæ²¡æœ‰æŠ¥é”™è¯¯å‘¢ï¼Ÿ
+ * æ–¹æ³•é‡è½½ï¼šæ–¹æ³•åä¸€æ ·ï¼Œå‚æ•°åˆ—è¡¨ä¸åŒï¼Œè¿”å›ç±»å‹å¯ä»¥ç›¸åŒï¼Œä¹Ÿå¯ä»¥ä¸åŒã€‚
+ * 2013.4.18é‡æ–°ç†è§£ï¼Œæ ¹æ®æ–¹æ³•é‡è½½çš„å®šä¹‰ï¼Œä¸èƒ½ç†è§£ï¼Œè¿™ä¸¤ä¸ªæ–¹æ³•çš„å‚æ•°ç±»å‹æ˜¯ä¸ä¸€æ ·çš„ï¼Œè™½ç„¶éƒ½æ˜¯Listï¼Œä½†æ˜¯å®ƒä»¬çš„æ•°æ®ç±»å‹æ˜¯ä¸ä¸€æ ·çš„ã€‚
  * TestOverroad
- * Author£ºjlLin
+ * Authorï¼šjlLin
  * Aug 28, 2011  4:03:10 PM
- * Copyright »ªÙÚ¾Å·½¿Æ¼¼ÓĞÏŞ¹«Ë¾
+ * Copyright åä»ä¹æ–¹ç§‘æŠ€æœ‰é™å…¬å¸
  */
 public class OverroadDemo {
 	
@@ -18,16 +18,16 @@ public class OverroadDemo {
 		System.out.println("List<String>");
 	}
 	
-	public ArrayList test(List<Object> list){
-		System.out.println("List<Object>");
-		return null;
-	}
+//	public ArrayList test(List<Object> list){
+//		System.out.println("List<Object>");
+//		return null;
+//	}
 	
 	/**
-	 * ¹¦ÄÜÃèÊö£º
+	 * åŠŸèƒ½æè¿°ï¼š
 	 * @param args
 	 * @return void
-	 * Author£ºjlLin
+	 * Authorï¼šjlLin
 	 * Aug 28, 2011 4:02:44 PM
 	 */
 	public static void main(String[] args) {

@@ -6,31 +6,31 @@ import java.io.PrintStream;
 public class TestPrintStream1 {
 
 	/**
-	 * ´òÓ¡Á÷£¬PrintWriterºÍPrintStream£¬¶¼ÊôÓÚÊä³öÁ÷£¬·Ö±ğÕë¶ÔÓÚ×Ö·ûºÍ×Ö½Ú
-	 * PrintWriterºÍPrintStreamµÄÊä³ö²Ù×÷²»»áÅ×³öÒì³£
-	 * PrintWriterºÍPrintStream£¬ÓĞ×Ô¶¯flush¹¦ÄÜ
+	 * æ‰“å°æµï¼ŒPrintWriterå’ŒPrintStreamï¼Œéƒ½å±äºè¾“å‡ºæµï¼Œåˆ†åˆ«é’ˆå¯¹äºå­—ç¬¦å’Œå­—èŠ‚
+	 * PrintWriterå’ŒPrintStreamçš„è¾“å‡ºæ“ä½œä¸ä¼šæŠ›å‡ºå¼‚å¸¸
+	 * PrintWriterå’ŒPrintStreamï¼Œæœ‰è‡ªåŠ¨flushåŠŸèƒ½
 	 * TestPrintStream1.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-28 ÏÂÎç08:49:17
+	 * Authorï¼šjllin
+	 * 2013-7-28 ä¸‹åˆ08:49:17
 	 */
 	public static void main(String[] args) {
 		PrintStream ps = null;
 		
 		try {
-			FileOutputStream fos = new FileOutputStream("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\bjsxt\\io_08\\log.dat");
+			FileOutputStream fos = new FileOutputStream("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\bjsxt\\io_08\\log.dat");
 			ps = new PrintStream(fos);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
 		if (ps != null) {
-			System.setOut(ps);//ÉèÖÃÊä³öµ½ÎÄ¼ş
+			System.setOut(ps);//è®¾ç½®è¾“å‡ºåˆ°æ–‡ä»¶
 		}
 		
 		int ln = 0;
-		for(char c = 0; c <= 60000; c++){//´òÓ¡×Ö·û
+		for(char c = 0; c <= 60000; c++){//æ‰“å°å­—ç¬¦
 			System.out.println(c+" ");
 			if(ln++ >= 100){
 				System.out.println();

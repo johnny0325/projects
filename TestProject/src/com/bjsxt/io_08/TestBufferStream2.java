@@ -13,13 +13,13 @@ public class TestBufferStream2 {
 	 * TestBufferStream2.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-22 ÏÂÎç06:09:55
+	 * Authorï¼šjllin
+	 * 2013-7-22 ä¸‹åˆ06:09:55
 	 */
 	public static void main(String[] args) {
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\bjsxt\\io_08\\dat.txt"));
-			BufferedReader br = new BufferedReader(new FileReader("E:\\ÏîÄ¿Ô´³ÌĞò\\TestProject\\src\\com\\bjsxt\\io_08\\dat.txt"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\bjsxt\\io_08\\dat.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("E:\\é¡¹ç›®æºç¨‹åº\\TestProject\\src\\com\\bjsxt\\io_08\\dat.txt"));
 			String s = null;
 			for (int i=0; i<100; i++) {
 				s = String.valueOf(Math.random());
@@ -33,7 +33,7 @@ public class TestBufferStream2 {
 			bw.close();
 			br.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("ÕÒ²»µ½ÎÄ¼ş");
+			System.out.println("æ‰¾ä¸åˆ°æ–‡ä»¶");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

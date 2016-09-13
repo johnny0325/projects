@@ -3,12 +3,12 @@ package com.bjsxt.basegrammar_02;
 public class TestConvert2 {
 
 	/**
-	 * Á·Ï°
+	 * ç»ƒä¹ 
 	 * TestConvert2.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-31 ÏÂÎç08:41:27
+	 * Authorï¼šjllin
+	 * 2013-7-31 ä¸‹åˆ08:41:27
 	 */
 	public static void main(String[] args) {
 		int i = 1,j = 12;

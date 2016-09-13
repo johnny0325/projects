@@ -3,26 +3,26 @@ package com.bjsxt.basegrammar_02;
 public class TestRecuision {
 
 	/**
-	 * ³£ÓÃµİ¹éµ÷ÓÃ£¬ÔÚ±ÊÊÔÌâÖĞ¾­³£¿¼µ½µÄ£¬ÒªÊìÁ·ÕÆÎÕ
+	 * å¸¸ç”¨é€’å½’è°ƒç”¨ï¼Œåœ¨ç¬”è¯•é¢˜ä¸­ç»å¸¸è€ƒåˆ°çš„ï¼Œè¦ç†Ÿç»ƒæŒæ¡
 	 * TestRecuision.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-8-8 ÏÂÎç03:44:25
+	 * Authorï¼šjllin
+	 * 2013-8-8 ä¸‹åˆ03:44:25
 	 */
 	public static void main(String[] args) {
 		System.out.println(fibonacci2(5));
 	}
 	
 	/**
-	 * ÇóÄ³¸öÊıµÄ½×³Ë
-	 * ĞÎÏóµØËµÃ÷µİ¹éµÄµ÷ÓÃ¹ı³Ì£¬Òª»­Í¼Àí½â
+	 * æ±‚æŸä¸ªæ•°çš„é˜¶ä¹˜
+	 * å½¢è±¡åœ°è¯´æ˜é€’å½’çš„è°ƒç”¨è¿‡ç¨‹ï¼Œè¦ç”»å›¾ç†è§£
 	 * TestRecuision.method1()
 	 * @param n
 	 * @return
 	 * @return int
-	 * Author£ºjllin
-	 * 2013-8-8 ÏÂÎç03:46:59
+	 * Authorï¼šjllin
+	 * 2013-8-8 ä¸‹åˆ03:46:59
 	 */
 	public static int method1(int n) {
 		if(n == 1) {
@@ -33,15 +33,15 @@ public class TestRecuision {
 	}
 	
 	/**
-	 * Çófibonacci(ì³²¨ÄÇÆõ)ÊıÁĞ£º1,1,2,3,5,8,...µÚ40¸öÊıµÄÖµ¡£ÊıÁĞÂú×ãµİÍÆ¹«Ê½£º
+	 * æ±‚fibonacci(æ–æ³¢é‚£å¥‘)æ•°åˆ—ï¼š1,1,2,3,5,8,...ç¬¬40ä¸ªæ•°çš„å€¼ã€‚æ•°åˆ—æ»¡è¶³é€’æ¨å…¬å¼ï¼š
 	 * F(1)=1,F(2)=1,F(n)=F(n-1)+F(n-2)(n>2)
-	 * Ê¹ÓÃµİ¹é·½·¨ÊµÏÖÈçÏÂ£¬¾ßÌåÖ´ĞĞÁ÷³ÌÇë²Î¿¼£ºfibonacciÖ´ĞĞÁ÷³ÌÍ¼.jpg
+	 * ä½¿ç”¨é€’å½’æ–¹æ³•å®ç°å¦‚ä¸‹ï¼Œå…·ä½“æ‰§è¡Œæµç¨‹è¯·å‚è€ƒï¼šfibonacciæ‰§è¡Œæµç¨‹å›¾.jpg
 	 * TestRecuision.fibonacci()
 	 * @param n
 	 * @return
 	 * @return int
-	 * Author£ºjllin
-	 * 2013-8-8 ÏÂÎç04:00:15
+	 * Authorï¼šjllin
+	 * 2013-8-8 ä¸‹åˆ04:00:15
 	 */
 	public static int fibonacci(int n) {
 		if(n ==1 || n ==2) {
@@ -52,13 +52,13 @@ public class TestRecuision {
 	}
 	
 	/**
-	 * Ê¹ÓÃ·Çµİ¹éµÄ·½·¨£¬ÇófibonacciÊıÁĞ
+	 * ä½¿ç”¨éé€’å½’çš„æ–¹æ³•ï¼Œæ±‚fibonacciæ•°åˆ—
 	 * TestRecuision.fibonacci2()
 	 * @param index
 	 * @return
 	 * @return long
-	 * Author£ºjllin
-	 * 2013-8-8 ÏÂÎç05:11:39
+	 * Authorï¼šjllin
+	 * 2013-8-8 ä¸‹åˆ05:11:39
 	 */
 	public static long fibonacci2(int index) {
 		if(index ==1 || index ==2) {

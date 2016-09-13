@@ -7,20 +7,20 @@ import java.io.IOException;
 public class TestFileReader {
 
 	/**
-	 * ²âÊÔÊ¹ÓÃFileReader¡¢FileWriter
+	 * æµ‹è¯•ä½¿ç”¨FileReaderã€FileWriter
 	 * TestFileReader.main()
 	 * @param args
 	 * @return void
-	 * Author£ºjllin
-	 * 2013-7-22 ÏÂÎç03:45:21
+	 * Authorï¼šjllin
+	 * 2013-7-22 ä¸‹åˆ03:45:21
 	 */
 	public static void main(String[] args) {
 		int b = 0;
 		FileReader fr = null;
 		try {
-			fr = new FileReader("E:/ÏîÄ¿Ô´³ÌĞò/TestProject/src/com/bjsxt/io_)8/TestFileInputStream.java");
+			fr = new FileReader("E:/é¡¹ç›®æºç¨‹åº/TestProject/src/com/bjsxt/io_)8/TestFileInputStream.java");
 		} catch (FileNotFoundException e) {
-			System.out.println("ÕÒ²»µ½Ö¸¶¨ÎÄ¼ş");
+			System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šæ–‡ä»¶");
 			System.exit(-1);
 		}
 		
@@ -31,9 +31,9 @@ public class TestFileReader {
 				num++;
 			}
 			fr.close();
-			System.out.println("¹²¶ÁÈ¡ÁË "+num+" ¸ö×Ö·û");
+			System.out.println("å…±è¯»å–äº† "+num+" ä¸ªå­—ç¬¦");
 		} catch (IOException e) {
-			System.out.println("¶ÁÈ¡ÎÄ¼ş´íÎó");
+			System.out.println("è¯»å–æ–‡ä»¶é”™è¯¯");
 			System.exit(-1);
 		}
 		
