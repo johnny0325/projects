@@ -31,7 +31,7 @@ import org.dom4j.io.XMLWriter;
  * @time 2011-7-20 下午12:18:29
  *
  */
-public class FileUtils {
+public class FileUtils { 
 	
 //	private static final Logger log = Logger.getLogger(FileUtil.class);
 	public static SimpleDateFormat dateTemplate4 = new SimpleDateFormat("MMdd");
