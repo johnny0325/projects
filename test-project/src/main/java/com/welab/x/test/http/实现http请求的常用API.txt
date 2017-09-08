@@ -1,0 +1,8 @@
+1.HttpClient,缺点：API非常复杂，而且还要记着关闭InputStream
+2.org.apache.http.client.fluent.request,Fluent API只暴露了一些最基本的HttpClient功能。这样，Fluent API就将开发者从连接管理、资源释放等繁杂的操作中解放出来，
+从而更易进行一些HttpClient的简单操作。
+<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>fluent-hc</artifactId>
+	<version>4.5.1</version>
+</dependency>
