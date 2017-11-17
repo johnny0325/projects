@@ -6,3 +6,4 @@
 	<artifactId>fluent-hc</artifactId>
 	<version>4.5.1</version>
 </dependency>
+3.使用socket

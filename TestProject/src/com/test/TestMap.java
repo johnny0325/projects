@@ -3,6 +3,7 @@ package com.test;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class TestMap {
@@ -38,9 +39,9 @@ public class TestMap {
 		}
 		
 		//·½·¨¶þ
-		Iterator it = map.entrySet().iterator();
+		Iterator<Entry<String,Object>> it = map.entrySet().iterator();
 		while(it.hasNext()){
-			Map.Entry entry = (Map.Entry)it.next();
+			Map.Entry entry = it.next();
 			Object key = entry.getKey();
 			Object value = entry.getValue();
 			
